@@ -1,6 +1,7 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://powershare-gitlab.chargerhere.net/zhidong.yang/enjoyelecPrivatePods.git'
+source 'https://cdn.cocoapods.org/'
 
-platform :ios, '9.0'
+platform :ios, '12.0'
 use_frameworks!
 
 def library
@@ -22,7 +23,7 @@ target "iShadowsocksR" do
     pod 'ICSPullToRefresh', '~> 0.6'
     pod 'ISO8601DateFormatter', '~> 0.8'
     pod 'ObjectMapper'
-    pod 'PSOperations', '~> 5.0'
+    pod 'PSOperations', '~> 5.0.9'
     library
     model
 end
