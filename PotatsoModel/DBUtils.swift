@@ -255,6 +255,8 @@ extension DBUtils {
             proxyNodes.forEach { node in
                 if let node = node, node.type == .Subscription, let url = URL(string: node.host) {
                     do {
+                        
+                        #warning("耗时操作,需要放到后台执行")
                         let contents = try String(contentsOf: url)
                         let nodes = parseNodes(contents, sourceUuid: node.uuid)
                         newNodes.append(contentsOf: nodes)

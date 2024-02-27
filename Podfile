@@ -24,6 +24,7 @@ target "iShadowsocksR" do
     pod 'ISO8601DateFormatter', '~> 0.8'
     pod 'ObjectMapper'
     pod 'PSOperations', '~> 5.0.9'
+    pod 'LookinServer', :configurations => ['Debug']
     library
     model
 end

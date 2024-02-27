@@ -531,6 +531,13 @@
 			remoteGlobalIDString = 3A663FDD2073701C0072D7FC;
 			remoteInfo = "yaml iOS";
 		};
+		3BD418AE2B8C680400423191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BD418AA2B8C680300423191 /* overtls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B6DE654029F4255A00468184;
+			remoteInfo = overtls;
+		};
 		9B8193BC1CBCFEE700BE320D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9B0CFA031C1C0B1A007BD7C6 /* Project object */;
@@ -709,6 +716,7 @@
 		3ACA448824761A76005FADD5 /* serverConnectivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serverConnectivity.h; sourceTree = "<group>"; };
 		3AF6B0482084AD7C00A4AA06 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF6B04A2084B04900A4AA06 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BD418AA2B8C680300423191 /* overtls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = overtls.xcodeproj; path = "overtls/overtls-rs/apple/overtls.xcodeproj"; sourceTree = "<group>"; };
 		5494FBA89E140F817CCF2ACA /* Pods_PotatsoLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotatsoLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5509E684B48A8007AADADA51 /* Pods-PotatsoModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotatsoModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-PotatsoModel/Pods-PotatsoModel.release.xcconfig"; sourceTree = "<group>"; };
 		61F603707715DCFA28936BB5 /* Pods-PotatsoLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotatsoLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-PotatsoLibrary/Pods-PotatsoLibrary.release.xcconfig"; sourceTree = "<group>"; };
@@ -1470,9 +1478,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3BD418AB2B8C680300423191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BD418AF2B8C680400423191 /* overtls.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9B0CFA021C1C0B1A007BD7C6 = {
 			isa = PBXGroup;
 			children = (
+				3BD418AA2B8C680300423191 /* overtls.xcodeproj */,
 				B6D3435C28001EBD00527D6D /* libmaxminddb.xcodeproj */,
 				3A262D46207A850200073C87 /* CallbackURLKit.xcodeproj */,
 				3A8780A6207549F800B96BF3 /* KissXML.xcodeproj */,
@@ -2820,6 +2837,10 @@
 					ProjectRef = 3A8AC90720754396002843E0 /* MMWormhole.xcodeproj */;
 				},
 				{
+					ProductGroup = 3BD418AB2B8C680300423191 /* Products */;
+					ProjectRef = 3BD418AA2B8C680300423191 /* overtls.xcodeproj */;
+				},
+				{
 					ProductGroup = B68182C9280DA02500A119BD /* Products */;
 					ProjectRef = B68182C8280DA02500A119BD /* QRScanner.xcodeproj */;
 				},
@@ -3037,6 +3058,13 @@
 			fileType = wrapper.framework;
 			path = yaml.framework;
 			remoteRef = 3ADE7CF72073729B000F70AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3BD418AF2B8C680400423191 /* overtls.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = overtls.framework;
+			remoteRef = 3BD418AE2B8C680400423191 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		B68182DE280DA02500A119BD /* QRScanner.framework */ = {
