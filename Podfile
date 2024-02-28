@@ -1,4 +1,4 @@
-source 'https://powershare-gitlab.chargerhere.net/zhidong.yang/enjoyelecPrivatePods.git'
+source 'https://github.com/TimorYang/TeemoYangPrivatePods.git'
 source 'https://cdn.cocoapods.org/'
 
 platform :ios, '12.0'
@@ -23,7 +23,7 @@ target "iShadowsocksR" do
     pod 'ICSPullToRefresh', '~> 0.6'
     pod 'ISO8601DateFormatter', '~> 0.8'
     pod 'ObjectMapper'
-    pod 'PSOperations', '~> 5.0.9'
+    pod 'PSOperations', '~> 5.0.11'
     pod 'LookinServer', :configurations => ['Debug']
     library
     model
